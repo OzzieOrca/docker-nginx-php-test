@@ -5,7 +5,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/so
 RUN apt-get update
 RUN apt-get install -y curl wget
 RUN apt-get install -y software-properties-common python-software-properties
-RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
 RUN add-apt-repository -y ppa:ondrej/php5
 RUN apt-get update
 
