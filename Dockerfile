@@ -21,7 +21,7 @@ ADD daviscru.conf /etc/nginx/sites-available/daviscru.conf
 RUN ln -s /etc/nginx/sites-available/daviscru.conf /etc/nginx/sites-enabled/daviscru.conf
 ADD daviscru-php.ini /etc/php5/fpm/conf.d/daviscru-php.ini
 
-ADD * /var/www/daviscru
+ADD . /var/www/daviscru
 
 CMD php5-fpm && nginx
 
