@@ -11,7 +11,7 @@ RUN apt-get update
 
 RUN apt-get install -y nginx
 RUN apt-get install -y php5-fpm
-RUN apt-get install -y php5-cli php5-mysql php5-intl php5-fpm php-apc php5-imap php5-mcrypt php5-curl php5-gd php5-json
+RUN apt-get install -y php5-cli php5-mysql php5-intl php-apc php5-imap php5-mcrypt php5-curl php5-gd php5-json
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 RUN echo "cgi.fix_pathinfo = 0;" >> /etc/php5/fpm/php.ini
