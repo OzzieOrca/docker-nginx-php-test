@@ -23,8 +23,12 @@ ADD daviscru-php.ini /etc/php5/fpm/conf.d/daviscru-php.ini
 
 ADD . /var/www/daviscru
 
+EXPOSE 80
+
 CMD php5-fpm && nginx
 
 #docker run -i -t -p 80:80 -v /vagrant:/var/www/daviscru ozzieorca/daviscru /bin/bash
 #docker run -d -p 80:80 -v /vagrant:/var/www/daviscru ozzieorca/daviscru
 #docker build -t ozzieorca/daviscru /vagrant/server/nginx+php
+
+#docker run -d -p 80:80 ozzieorca/docker-nginx-php-test
