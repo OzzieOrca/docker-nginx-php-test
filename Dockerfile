@@ -4,7 +4,7 @@ MAINTAINER Scotty Waggoner <ozzieorca@gmail.com>
 RUN echo "deb http://archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y curl wget
-RUN apt-get install -y python-software-properties
+RUN apt-get install -y software-properties-common python-software-properties
 RUN add-apt-repository -y ppa:ondrej/php5
 RUN apt-get update
 
